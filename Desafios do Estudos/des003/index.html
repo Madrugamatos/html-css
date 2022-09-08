@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você esta vendo a imagem completa? Experimente ampliar a tela para apreciar melhor a experiência <br>
+      &#x1f923;
+    </p>
+    <picture>
+        <source media="(max-width: 730px )" srcset="imagens/cristo-redentor-300.jpg" type="image/jpg">
+        <source media="(max-width: 1030px)" srcset="imagens/cristo-redentor-700.jpg" type="image/jpg">
+        <img src="imagens/cristo-redentor-1000.jpg" alt="imagem do cristo redentor">
+    </picture>
+    <audio src="au/mus-01.mp3" preload="none" controls autoplay></audio>
+    
+</body>
+</html>
