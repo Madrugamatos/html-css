@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        # = ID
+        . = CLASS
+        : = PSEUDO-CLASS
+        :: = PSEUDO-ELEMENT
+        > = CHILDREN
+        */
+        body {
+            font-family: sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(4, 248, 4);            
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(8, 8, 8);
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        h1:hover {
+            background-color: black;
+            color:white;
+        }
+
+        .especial:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .especial::before{
+            content: '♫';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+
+        }
+
+        .especial::after {
+            content: '♫';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+            
+        }
+
+        div > iframe {
+            display: none;
+        }
+
+        div:hover >iframe {
+            display: block;
+            width: 300px;
+            height: 200px;
+        }
+
+        
+        </style>
+</head>
+<body>
+    <div>
+        <h1>Personalizando Links</h1>
+    </div>
+
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-02/d011/imagens/astronauta.png" target="_blank" rel="external">Repositório Github:</a></li>        
+        <div>
+            <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external" class="especial">Canal do youtube:</a>  </li>  
+            
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/nxWQXjBy3fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Site do Curso em video: </a></li>
+        
+
+        
+    </ul>
+    
+</body>
+</html>
